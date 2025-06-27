@@ -1,10 +1,9 @@
 package com.sada.bytes
 
-@main def hello() = {
+@main def hello(): Unit = {
   println("Hello, Scala developer!")
-  val x = new HTMLEditor()
-  x.replaceTagContent("/Users/gautam.pandya/Workspace/Idea/INC/vertx-scala-sbt/src/main/resources/WEB/index.html",
+  new HTMLEditor().editFile("PROD")
+  /*x.replaceTagContent("/Users/gautam.pandya/Workspace/Idea/INC/vertx-scala-sbt/src/main/resources/WEB/index.html",
     "title",
-    "TO MAKE SURE THAT THIS WORKS, PLEASE REPLACE THIS TEXT WITH YOUR OWN TITLE")
-
+    "TO MAKE SURE THAT THIS WORKS, PLEASE REPLACE THIS TEXT WITH YOUR OWN TITLE")*/
 }
